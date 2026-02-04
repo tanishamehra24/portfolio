@@ -82,9 +82,9 @@ const projects = [
       "Add a blog or writing section",
     ],
 
-    frontendRepo: "https://github.com/tanishamehra24/portfolio-frontend",
+    frontendRepo: "https://github.com/tanishamehra24/portfolio.git",
     backendRepo: " ",
-    live: "YOUR_LIVE_LINK",
+    live: "https://tanisha-portfolio-eta.vercel.app/",
   },
 
   {
