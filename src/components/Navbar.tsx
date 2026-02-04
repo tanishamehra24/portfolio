@@ -1,7 +1,7 @@
-import {Menu, X, Moon, Sun} from "lucide-react";
+import {Menu, X} from "lucide-react";
 import {useState} from "react";
 import {Link} from "react-router-dom";
-import { type ReactNode } from "react";
+import {type ReactNode} from "react";
 
 type NavLinkProps = {
   to: string;
@@ -13,7 +13,6 @@ type MobileLinkProps = {
   children: ReactNode;
   onClick: () => void;
 };
-
 
 const NavLink = ({to, children}: NavLinkProps) => (
   <Link
@@ -35,10 +34,9 @@ const MobileLink = ({to, children, onClick}: MobileLinkProps) => (
 );
 
 const Navbar = () => {
-  const [isToggled, setIsToggled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   return (
-    <nav className=" fixed top-5 z-50 py-4 w-full border border-y border-gray-700  backdrop-blur-md bg-[#0f172a]/70  ">
+    <nav className=" fixed top-5 z-50 py-4 w-full border-y border-gray-700  backdrop-blur-md bg-[#0f172a]/70  ">
       <div className="mx-auto max-w-7xl flex px-4 sm:px-6 lg:px-8 justify-between items-center">
         <h1 className="text-xl text-white font-semibold tracking-wide">
           TANEE
@@ -48,13 +46,6 @@ const Navbar = () => {
           <NavLink to="/">Home</NavLink>
           <NavLink to="/about">About</NavLink>
           <NavLink to="/contact">Contact</NavLink>
-
-          <button
-            onClick={() => setIsToggled(!isToggled)}
-            className="active:scale-95 transition"
-          >
-            {isToggled ? <Moon size={22} /> : <Sun size={22} />}
-          </button>
         </div>
         {/* Mobile Hamburger */}
         <button
@@ -76,14 +67,6 @@ const Navbar = () => {
             <MobileLink to="/contact" onClick={() => setMenuOpen(false)}>
               Contact
             </MobileLink>
-
-            <button
-              onClick={() => setIsToggled(!isToggled)}
-              className="flex items-center gap-2"
-            >
-              {isToggled ? <Moon size={20} /> : <Sun size={20} />}
-              <span>Toggle Theme</span>
-            </button>
           </div>
         )}
       </div>

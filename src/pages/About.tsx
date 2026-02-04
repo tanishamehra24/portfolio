@@ -1,31 +1,65 @@
 const About = () => {
   return (
-    <section className="min-h-screen bg-[#0f172a] flex items-center mx-auto pt-24 md:pt-0 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-6xl mx-auto px-auto space-y-10 animate-fadeUp">
-        <h2 className="text-6xl my-auto text-[#3068e9]">
-          Tanisha Mehra
-          <br />
-          <span className="text-2xl text-gray-400">
-            - Building things on the web, one clean component at a time.
-            <hr className="text-gray-800 my-6"/>
-          </span>
-        </h2>
-        <p className="text-gray-100 lg:text-xl sm:text-sm md:text-lg leading-relaxed ">
-          I'm a Computer Science Engineering student and aspiring frontend
-          developer with a strong interest in building clean, responsive, and
+    <section className="bg-[#0f172a] mx-auto pt-24 px-4 sm:px-6 lg:px-8 py-16">
+      <div className="max-w-6xl mx-auto space-y-10 animate-fadeUp">
+        <div>
+          <h2 className="text-6xl text-[#3068e9]">Tanisha Mehra</h2>
+          <p className="text-2xl text-gray-400 mt-2">
+            Building things on the web, one clean component at a time.
+          </p>
+          <hr className="border-gray-800 my-6" />
+        </div>
+
+        <p className="text-gray-100 lg:text-xl md:text-lg text-sm leading-relaxed">
+          I’m a Computer Science Engineering student focused on frontend
+          development, with a strong interest in building clean, responsive, and
           user-friendly web applications. I primarily work with React and modern
-          JavaScript, focusing on creating interfaces that are intuitive,
-          accessible, and visually simple. I enjoy breaking down problems,
-          structuring components thoughtfully, and writing clean code that is
-          easy to maintain and scale. Alongside frontend development, I'm
-          actively exploring backend technologies to broaden my understanding of
-          full-stack development and how applications work end-to-end. I believe
-          in learning by building, which is why I focus on real-world projects
-          that challenge me to improve both technically and creatively. I'm
-          continuously refining my skills, staying curious about new tools and
-          frameworks, and aiming to build digital experiences that are both
-          functional and meaningful.
+          JavaScript, and enjoy structuring components thoughtfully, solving
+          problems, and writing clean, maintainable code. I’m also exploring
+          backend technologies to better understand how applications work
+          end-to-end through hands-on projects.
         </p>
+
+        <h2 className="text-2xl text-white font-bold">Skills</h2>
+
+        <div className="text-white grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-8">
+          <div>
+            <h3 className="text-xl font-semibold mb-4">Languages</h3>
+            <ul className="space-y-2 text-gray-400">
+              <li>JavaScript</li>
+              <li>HTML</li>
+              <li>CSS</li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 className="text-xl font-semibold mb-4">Frontend</h3>
+            <ul className="space-y-2 text-gray-400">
+              <li>React</li>
+              <li>Tailwind CSS</li>
+              <li>Responsive Design</li>
+              <li>Component-based Architecture</li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 className="text-xl font-semibold mb-4">Tools & Platforms</h3>
+            <ul className="space-y-2 text-gray-400">
+              <li>Git & GitHub</li>
+              <li>VS Code</li>
+              <li>Vite</li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 className="text-xl font-semibold mb-4">Currently Exploring</h3>
+            <ul className="space-y-2 text-gray-400">
+              <li>Backend fundamentals</li>
+              <li>REST APIs</li>
+              <li>Full-stack application flow</li>
+            </ul>
+          </div>
+        </div>
       </div>
     </section>
   );
