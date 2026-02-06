@@ -39,7 +39,7 @@ const Navbar = () => {
     <nav className=" fixed top-5 z-50 py-4 w-full border-y border-gray-700  backdrop-blur-md bg-[#0f172a]/70  ">
       <div className="mx-auto max-w-7xl flex px-4 sm:px-6 lg:px-8 justify-between items-center">
         <h1 className="text-xl text-white font-semibold tracking-wide">
-          TANEE
+          Tanisha.codes
         </h1>
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center gap-8 text-gray-300">
