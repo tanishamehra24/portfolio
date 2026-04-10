@@ -1,73 +1,73 @@
-# React + TypeScript + Vite
+# 🗂️ Portfolio — Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A personal developer portfolio built to cut through the noise. Instead of a static resume, this presents projects with detailed explanations, live demos, and source code links — giving visitors a real sense of the work, not just a list of titles.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Features
 
-## React Compiler
+- **Responsive & minimal UI** — Clean layout that works seamlessly across all screen sizes
+- **Project listing with detailed pages** — Each project gets its own dedicated page with context, stack, and outcomes
+- **Dynamic routing** — Smooth client-side navigation powered by React Router
+- **Reusable & scalable components** — Modular architecture that's easy to extend
+- **Clean code structure** — Readable, maintainable, and well-organized codebase
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+| Technology | Purpose |
+|---|---|
+| [React](https://react.dev/) | UI library |
+| [TypeScript](https://www.typescriptlang.org/) | Type safety & developer experience |
+| [Tailwind CSS](https://tailwindcss.com/) | Utility-first styling |
+| [React Router](https://reactrouter.com/) | Client-side routing |
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## 🚀 Getting Started
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### Prerequisites
+
+- Node.js `v18+`
+- npm or yarn
+
+
+### Development
+
+```bash
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+The app will be available at `http://localhost:5173` (or whichever port Vite assigns).
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### Build for Production
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm run build
 ```
+
+### Preview Production Build
+
+```bash
+npm run preview
+```
+
+---
+
+## 📁 Project Structure
+
+```
+src/
+├── components/       # Reusable UI components
+├── pages/            # Route-level page components
+├── data/             # Project data and constants
+├── types/            # TypeScript interfaces and types
+├── assets/           # Images, icons, and static files
+└── main.tsx          # App entry point
+```
+
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
