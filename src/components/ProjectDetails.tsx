@@ -43,7 +43,7 @@ const ProjectDetails = () => {
           </p>
           <p>
             <b>Database:</b> {project.tech.database.join(", ")}
-          </p>
+         </p>
         </ProjectSection>
 
         <ProjectSection title="Challenges & Learnings">

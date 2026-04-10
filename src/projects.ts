@@ -83,54 +83,55 @@ const projects = [
     ],
 
     frontendRepo: "https://github.com/tanishamehra24/portfolio.git",
-    backendRepo: " ",
     live: "https://tanisha-portfolio-eta.vercel.app/",
   },
 
   {
-    id: "blogapp",
-    title: "BlogApp Project",
-    desc: "A full-stack blog platform where users can write, edit, and share posts seamlessly.",
+    id: "internship-tracker",
+    title: "Internship Tracker",
+    desc: "A full-stack internship tracker where users can add, edit, and track their internship applications seamlessly.",
 
     overview:
-      "BlogApp is a full-stack blogging platform that allows users to create, edit, and manage blog posts through a clean and intuitive interface.",
+      "Internship Tracker is a full-stack web application that helps students organize and manage their internship or job applications in one place. It provides a centralized dashboard where users can add, track, and update the status of applications throughout the hiring process.",
 
     problem:
-      "Writers and developers need a simple platform to share ideas without unnecessary complexity. Many blogging platforms are either too basic or overly complex for personal use.",
+      "Students often apply to multiple internships across different platforms, making it difficult to keep track of application details, links, and statuses. This lack of organization can lead to missed follow-ups and confusion during the application process.",
 
     solution:
-      "BlogApp provides a streamlined blogging experience with authentication, post management, and a structured backend API. The frontend and backend are maintained separately to ensure scalability and clean architecture.",
+      "The Internship Tracker provides a simple platform where users can record internship applications, monitor their progress, and manage important details like company information, roles, and application status through a structured dashboard.",
 
     features: [
       "User authentication",
-      "Create, edit, and delete blog posts",
+      "Create, edit, and track applications",
       "Protected routes",
       "Responsive UI",
+      "Search applications by company or role",
       "REST API integration",
     ],
 
     tech: {
       frontend: ["React", "Tailwind CSS"],
-      backend: ["Node.js", "Express"],
-      database: ["MongoDB"],
+      backend: ["Node.js", "Express","JWT","bcrypt"],
+      database: ["PostgreSQL"],
     },
 
     challenges: [
       "Implementing authentication and protected routes",
       "Managing global state and API calls",
-      "Designing a scalable backend structure",
+      "Designing a relational database structure for users and applications",
+      "Handling form validation and user input errors"
     ],
 
     future: [
-      "Add comments and likes",
-      "Implement role-based access",
-      "Improve editor experience",
-      "Add pagination and search",
+      "Interview notes and reminders",
+      "Application analytics dashboard",
+      "Export application data (CSV/Excel)",
+      "Resume version tracking",
     ],
 
-    frontendRepo: "https://github.com/tanishamehra24/blogApp-frontend",
-    backendRepo: "https://github.com/tanishamehra24/blogApp-backend",
-    live: "https://blog-app-frontend-taupe-pi.vercel.app/",
+    frontendRepo: "https://github.com/tanishamehra24/internship-tracker-frontend",
+    backendRepo: "https://github.com/tanishamehra24/internship-tracker-backend",
+    live: "https://interntrack-mu.vercel.app/",
   },
 ];
 
