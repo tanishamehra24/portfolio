@@ -12,7 +12,7 @@ const Hero = () => {
             Hi I'm Tanisha
           </h2>
           <h2 className=" text-4xl md:text-6xl text-blue-400 font-semibold leading-tight">
-            FRONTEND <span className="text-gray-100">DEVELOPER</span>
+            FULL STACK <span className="text-gray-100">DEVELOPER</span>
           </h2>
           <p className="text-[#31abe3c9]  text-2xl font-semibold">
             Building Clean & modern web apps
