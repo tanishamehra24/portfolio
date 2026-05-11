@@ -1,47 +1,52 @@
 const projects = [
   {
-    id: "booknest",
-    title: "BookNest",
-    desc: "A full-stack book management app with clean, simple UI and CRUD features.",
+    id: "next-goal",
+    title: "Next Goal",
+    desc: "A mobile-first goal tracking app that scores and prioritizes your goals, always surfacing the most important one to focus on next.",
+
     overview:
-      "BookNest is a full-stack web application that allows users to manage and organize books efficiently through a secure dashboard.",
+      "Next Goal is a full-stack MERN application designed to help users manage and prioritize their goals effectively. Instead of showing a flat list, it uses a scoring algorithm based on priority, deadline, energy, and estimated time to recommend the single most important goal to tackle next.",
 
     problem:
-      "Managing book collections manually is inefficient and unorganized. Users lack a centralized platform to store and manage book data.",
+      "People often have multiple goals but struggle to decide where to focus their energy. Traditional to-do apps treat all tasks equally, leaving users overwhelmed and unsure what to work on next.",
 
     solution:
-      "BookNest provides a dashboard where users can add, update, and delete books. The frontend communicates with a RESTful backend API, ensuring smooth data flow and separation of concerns.",
+      "Next Goal eliminates decision fatigue by automatically calculating a score for each active goal and surfacing the highest priority one. Users can mark goals as done or skip them, keeping the system dynamic and up to date.",
 
     features: [
+      "User authentication with JWT",
+      "Create, edit, and delete goals",
+      "Smart next goal recommendation based on scoring algorithm",
+      "Mark goals as done or skip them",
       "Protected routes",
-      "Add, update, and delete books",
-      "Responsive UI",
-      "REST API integration",
+      "Mobile-first responsive UI",
+      "Form validation with inline error messages",
     ],
 
     tech: {
       frontend: ["React", "Tailwind CSS"],
-      backend: ["Node.js", "Express"],
+      backend: ["Node.js", "Express", "JWT", "bcrypt"],
       database: ["MongoDB"],
     },
 
     challenges: [
-      "Managing protected routes in React",
-      "Handling async API calls and errors",
+      "Designing and tuning the goal scoring algorithm for accurate prioritization",
+      "Fixing duplicate PATCH routes in Express that silently blocked status updates",
+      "Managing cascading re-renders from multiple useState calls inside useEffect",
+      "Handling event bubbling between delete buttons and card click navigation",
     ],
 
     future: [
-      "Search and filter books",
-      "Authentication",
-      "Pagination",
-      "Role-based access",
+      "Goal history page for completed and skipped goals",
+      "Analytics dashboard showing goal completion trends",
+      "Energy-aware scheduling based on time of day",
+      "PWA support for a native mobile experience",
     ],
 
-    frontendRepo: "https://github.com/tanishamehra24/booknest-frontend",
-    backendRepo: "https://github.com/tanishamehra24/booknest-backend",
-    live: "https://book-nest-frontend-mu.vercel.app/",
+    frontendRepo: "https://github.com/tanishamehra24/next-goal-frontend",
+    backendRepo: "https://github.com/tanishamehra24/next-goal-backend",
+    live: "https://next-goal-frontend.vercel.app/",
   },
-
   {
     id: "portfolio",
     title: "Portfolio Project",
@@ -111,7 +116,7 @@ const projects = [
 
     tech: {
       frontend: ["React", "Tailwind CSS"],
-      backend: ["Node.js", "Express","JWT","bcrypt"],
+      backend: ["Node.js", "Express", "JWT", "bcrypt"],
       database: ["PostgreSQL"],
     },
 
@@ -119,7 +124,7 @@ const projects = [
       "Implementing authentication and protected routes",
       "Managing global state and API calls",
       "Designing a relational database structure for users and applications",
-      "Handling form validation and user input errors"
+      "Handling form validation and user input errors",
     ],
 
     future: [
@@ -129,7 +134,8 @@ const projects = [
       "Resume version tracking",
     ],
 
-    frontendRepo: "https://github.com/tanishamehra24/internship-tracker-frontend",
+    frontendRepo:
+      "https://github.com/tanishamehra24/internship-tracker-frontend",
     backendRepo: "https://github.com/tanishamehra24/internship-tracker-backend",
     live: "https://interntrack-mu.vercel.app/",
   },
