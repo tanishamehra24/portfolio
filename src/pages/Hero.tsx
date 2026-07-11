@@ -1,6 +1,6 @@
 import {ArrowUpRight} from "lucide-react";
 import Pic from "../assets/picture.jpg";
-import resume from "../../public/TanishaMehra-Resume.pdf";
+import resume from "../../public/Tanisha_Mehra_Resume.pdf";
 import {Link} from "react-router-dom";
 
 const Hero = () => {
